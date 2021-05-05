@@ -49,12 +49,16 @@ const axisY1 = chart.getDefaultAxisY()
     .setStrokeStyle( blueLine )
 
 // Second Axes  (extra)
-const axisX2 = chart.addAxisX(true)
+const axisX2 = chart.addAxisX({
+    opposite: true
+})
     .setTitle('Axis X2')
     .setInterval(-60, 500, false, true)
     .setStrokeStyle( greenLine )
 
-const axisY2 = chart.addAxisY(true)
+const axisY2 = chart.addAxisY({
+    opposite: true
+})
     .setTitle('Axis Y2')
     .setInterval(-20, 200, false, true)
     .setStrokeStyle( greenLine )

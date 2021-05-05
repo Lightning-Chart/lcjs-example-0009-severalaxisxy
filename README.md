@@ -32,8 +32,12 @@ const chart =  lightningChart().ChartXY()
 const axisX1 = chart.getDefaultAxisX()
 const axisX1 = chart.getDefaultAxisY()
 // Create extra axes X and Y 
-const axisX2 = chart.addAxisX(true)
-const axisX2 = chart.addAxisY(true)
+const axisX2 = chart.addAxisX({
+    opposite: true
+})
+const axisX2 = chart.addAxisY({
+    opposite: true
+})
 // Create series with explicit axes.
 const splineSeries1 = chart.addSplineSeries({
     xAxis: axisX1,
@@ -80,10 +84,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/chartxy.html
-[Rectangle series]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/rectangleseries.html
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/axis.html
-[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/solidfill.html
-[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/solidline.html
-[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/globals.html#colorrgba
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/chartxy.html
+[Rectangle series]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/rectangleseries.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/axis.html
+[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/solidfill.html
+[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/solidline.html
+[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/globals.html#colorrgba
 
