@@ -19,7 +19,7 @@ const {
 const ls = lightningChart()
 
 const chart = ls.ChartXY({
-    // theme: Themes.dark
+    // theme: Themes.darkGold
 })
     .setTitle('Several Axis')
 
