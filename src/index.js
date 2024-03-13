@@ -17,7 +17,7 @@ const ls = lightningChart()
 
 const chart = ls
     .ChartXY({
-        // theme: Themes.darkGold
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Several Axis')
 
