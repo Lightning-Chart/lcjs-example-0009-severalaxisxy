@@ -13,7 +13,9 @@ const { lightningChart, SolidFill, SolidLine, ColorRGBA, Themes } = lcjs
 
 const { createProgressiveRandomGenerator } = xydata
 
-const ls = lightningChart()
+const ls = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        })
 
 const chart = ls
     .ChartXY({
