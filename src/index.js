@@ -3,13 +3,13 @@
  */
 
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Import xydata
-const xydata = require('@arction/xydata')
+const xydata = require('@lightningchart/xydata')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, SolidFill, SolidLine, ColorRGBA, Themes } = lcjs
+const { lightningChart, SolidFill, SolidLine, ColorRGBA, emptyFill, Themes } = lcjs
 
 const { createProgressiveRandomGenerator } = xydata
 
@@ -22,6 +22,7 @@ const chart = ls
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Several Axis')
+    .setCursorMode('show-nearest')
 
 // Cache colors used in the example
 const blueFill = new SolidFill({ color: ColorRGBA(0, 0, 255) })
@@ -70,21 +71,25 @@ const axisY2 = chart
 // Create series with explicit axes.
 // Axes 1
 const splineSeries1 = chart
-    .addSplineSeries({
+    .addPointLineAreaSeries({
+        dataPattern: 'ProgressiveX',
         xAxis: axisX1,
         yAxis: axisY1,
     })
     .setStrokeStyle(redLine)
     .setPointFillStyle(blueFill)
+    .setAreaFillStyle(emptyFill)
     .setName('Axis 1')
 
 // Axes 2
 const splineSeries2 = chart
-    .addSplineSeries({
+    .addPointLineAreaSeries({
+        dataPattern: 'ProgressiveX',
         xAxis: axisX2,
         yAxis: axisY2,
     })
     .setStrokeStyle(greenLine)
+    .setAreaFillStyle(emptyFill)
     .setName('Axis 2')
 
 // Function to add random values to given series with createProgressiveRandomGenerator
