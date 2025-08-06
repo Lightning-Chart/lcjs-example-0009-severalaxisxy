@@ -19,6 +19,7 @@ const ls = lightningChart({
 
 const chart = ls
     .ChartXY({
+        legend: { visible: false },
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Several Axis')
@@ -70,26 +71,22 @@ const axisY2 = chart
 
 // Create series with explicit axes.
 // Axes 1
-const splineSeries1 = chart
-    .addPointLineAreaSeries({
-        dataPattern: 'ProgressiveX',
+const series1 = chart
+    .addPointLineSeries({
         xAxis: axisX1,
         yAxis: axisY1,
     })
     .setStrokeStyle(redLine)
     .setPointFillStyle(blueFill)
-    .setAreaFillStyle(emptyFill)
     .setName('Axis 1')
 
 // Axes 2
 const splineSeries2 = chart
-    .addPointLineAreaSeries({
-        dataPattern: 'ProgressiveX',
+    .addPointLineSeries({
         xAxis: axisX2,
         yAxis: axisY2,
     })
     .setStrokeStyle(greenLine)
-    .setAreaFillStyle(emptyFill)
     .setName('Axis 2')
 
 // Function to add random values to given series with createProgressiveRandomGenerator
@@ -104,12 +101,12 @@ const setSeries = (amountOfDots, splineSeries) => {
         .forEach((point, i) => {
             ;(point.x = point.x * 5), // define X coordinates for point
                 (point.y = 20 * Math.sin(i / (10 * Math.PI)) + Math.floor(Math.random() * 20)) // define Y coordinates for point
-            splineSeries.add(point) // add to series
+            splineSeries.appendSample(point) // add to series
         })
 }
 
 // set Series 1
-setSeries(250, splineSeries1)
+setSeries(250, series1)
 
 // set Series 2
 setSeries(70, splineSeries2)
