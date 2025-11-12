@@ -84,10 +84,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2025. All rights reserved.
 
 
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/ChartXY.html
-[Rectangle series]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/RectangleSeries.html
-[Axis]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/Axis.html
-[Solid FillStyle]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SolidFill.html
-[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SolidLine.html
-[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/functions/ColorRGBA.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/ChartXY.html
+[Rectangle series]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/RectangleSeries.html
+[Axis]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/Axis.html
+[Solid FillStyle]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/SolidFill.html
+[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/SolidLine.html
+[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/functions/ColorRGBA.html
 
