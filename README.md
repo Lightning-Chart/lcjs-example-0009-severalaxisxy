@@ -1,6 +1,6 @@
-# Several AxesXY
+# Several AxesXY in single Chart
 
-![Several AxesXY](severalAxesXY-darkGold.png)
+![Several AxesXY in single Chart](severalAxesXY-darkGold.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
