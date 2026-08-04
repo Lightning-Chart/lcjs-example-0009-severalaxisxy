@@ -48,8 +48,8 @@ const splineSeries2 = chart.addSplineSeries({
     yAxis: axisY2,
 })
 // Set values of sub-categories on categories (relative Y size).
-splineSeries1.add({ x: 0, y: 0.4 })
-splineSeries2.add({ x: 2, y: 0.6 })
+splineSeries1.appendJSON({ x: 0, y: 0.4 })
+splineSeries2.appendJSON({ x: 2, y: 0.6 })
 ```
 
 
@@ -84,10 +84,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2026. All rights reserved.
 
 
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/ChartXY.html
-[Rectangle series]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/RectangleSeries.html
-[Axis]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/Axis.html
-[Solid FillStyle]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/SolidFill.html
-[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/SolidLine.html
-[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/functions/ColorRGBA.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/ChartXY.html
+[Rectangle series]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/RectangleSeries.html
+[Axis]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/Axis.html
+[Solid FillStyle]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/SolidFill.html
+[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/SolidLine.html
+[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/functions/ColorRGBA.html
 
